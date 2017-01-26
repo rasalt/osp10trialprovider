@@ -101,7 +101,8 @@ resources:
             -
               type: ovs_bridge
               name: br-provider
-              use_dhcp: true
+              use_dhcp: false
+              defroute: false
               # Can't do this yet: https://bugs.launchpad.net/heat/+bug/1344284
               #ovs_extra:
               #  - list_join:
